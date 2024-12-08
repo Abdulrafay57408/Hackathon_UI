@@ -10,20 +10,22 @@ export default function ShopPage() {
     return (
         <div className="min-h-screen bg-[#F9FAFB]">
             {/* Header Section */}
-            <header className="bg-[#7238C2] text-white p-4 flex items-center justify-between">
-                <div className="text-3xl font-bold tracking-wide text-[#FFD700]">Hekto</div>
-                <nav className="flex space-x-6">
-                    <a href="/" className="text-lg text-white hover:text-[#FFD700] transition-colors">Home</a>
-                    <a href="/about-us" className="text-lg text-white hover:text-[#FFD700] transition-colors">About Us</a>
-                    <a href="/contact-us" className="text-lg text-white hover:text-[#FFD700] transition-colors">Contact</a>
-                    <a href="#" className="text-lg text-white hover:text-[#FFD700]">Login</a>
-                </nav>
+            <header className="bg-[#7238C2] text-white py-6 px-4">
+                <div className="container mx-auto flex justify-between items-center">
+                    <div className="text-3xl font-bold tracking-wide text-[#FFD700]">Hekto</div>
+                    <nav className="space-x-6">
+                        <a href="/" className="text-lg text-white hover:text-[#FFD700] transition-colors">Home</a>
+                        <a href="/about-us" className="text-lg text-white hover:text-[#FFD700] transition-colors">About Us</a>
+                        <a href="/contact-us" className="text-lg text-white hover:text-[#FFD700] transition-colors">Contact Us</a>
+                        <a href="/login" className="text-lg text-white hover:text-[#FFD700] transition-colors">Login</a>
+                    </nav>
+                </div>
             </header>
 
             {/* Main Content */}
-            <div className="flex mt-8">
+            <div className="container mx-auto flex mt-8 px-4">
                 {/* Filters Sidebar */}
-                <aside className="w-1/4 p-4 bg-white shadow-md rounded-lg text-gray-800">
+                <aside className="w-1/4 p-6 bg-white shadow-md rounded-lg text-gray-800">
                     <h2 className="text-xl font-semibold mb-4 text-[#7238C2]">Product Brand</h2>
                     <ul className="space-y-2">
                         <li><input type="checkbox" className="mr-2" />Coaster Furniture</li>
@@ -84,28 +86,37 @@ export default function ShopPage() {
             </div>
 
             {/* Footer Section */}
-            <footer className="bg-[#1A202C] text-white mt-8">
-                <div className="p-6 flex justify-between">
+            <footer className="bg-[#1A202C] text-white py-12">
+                <div className="container mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div>
-                        <h3 className="font-bold mb-2 text-[#FFD700]">Hekto</h3>
+                        <h4 className="font-bold text-[#FFD700] mb-4">Hekto</h4>
                         <p>Contact Info</p>
                         <p>17 Princess Road, London</p>
                     </div>
                     <div>
-                        <h3 className="font-bold mb-2 text-[#FFD700]">Categories</h3>
+                        <h4 className="font-bold text-[#FFD700] mb-4">Categories</h4>
                         <ul className="space-y-1">
                             <li>Laptops & Computers</li>
                             <li>Cameras & Photography</li>
                         </ul>
                     </div>
                     <div>
-                        <h3 className="font-bold mb-2 text-[#FFD700]">Customer Care</h3>
+                        <h4 className="font-bold text-[#FFD700] mb-4">Customer Care</h4>
                         <ul className="space-y-1">
                             <li>My Account</li>
                             <li>Discount</li>
                         </ul>
                     </div>
+                    <div>
+                        <h4 className="font-bold text-[#FFD700] mb-4">Pages</h4>
+                        <ul className="space-y-1">
+                            <li>Shop</li>
+                            <li>Blog</li>
+                            <li>Contact Us</li>
+                        </ul>
+                    </div>
                 </div>
+                <p className="text-center text-gray-400 mt-8">©Webecy - All Rights Reserved</p>
             </footer>
         </div>
     );
