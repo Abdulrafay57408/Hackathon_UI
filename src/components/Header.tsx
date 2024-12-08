@@ -28,7 +28,7 @@ export default function Header() {
 
         {/* Navigation Links */}
         <nav className="hidden lg:flex space-x-6">
-          <Link href="/home" className="hover:underline">
+          <Link href="/" className="hover:underline">
             Home
           </Link>
           <Link href="/shop" className="hover:underline">
