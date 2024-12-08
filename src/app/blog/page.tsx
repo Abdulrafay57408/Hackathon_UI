@@ -1,4 +1,8 @@
-export default function BlogPost({ params }: { params: { id: string } }) {
+"use client"
+import { useParams } from "next/navigation";
+
+export default function BlogPost() {
+    const params = useParams();
     const { id } = params;
 
     return (
