@@ -38,8 +38,8 @@ export default function Footer() {
                     <h4 className="text-lg font-bold mb-4">Customer Care</h4>
                     <ul className="space-y-2">
                         <li><Link href="/faq" className="hover:underline">FAQ</Link></li>
-                        <li>Returns</li> {/* Removed the link */}
-                        <li>Shipping</li> {/* Removed the link */}
+                        <li>Returns</li> 
+                        <li>Shipping</li> 
                         <li><Link href="/contact-us" className="hover:underline">Contact Us</Link></li>
                     </ul>
                 </div>
@@ -61,9 +61,9 @@ export default function Footer() {
             <div className="container mx-auto py-6 text-center">
                 <p>&copy; 2024 Hekto. All Rights Reserved.</p>
                 <div className="flex justify-center space-x-4 mt-4">
-                    <Link href="/terms" className="hover:underline">Terms & Conditions</Link>
-                    <Link href="/privacy" className="hover:underline">Privacy Policy</Link>
-                    <Link href="/sitemap" className="hover:underline">Sitemap</Link>
+                    <li>Terms & Conditions</li>
+                    <li>Privacy Policy</li>
+                    <li>Sitemap</li>
                 </div>
             </div>
         </footer>

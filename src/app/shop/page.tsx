@@ -3,6 +3,7 @@
 import products from "@/data/products"; // Assume this includes product details
 import ProductCard from "@/components/ProductCard"; // Assumed reusable component
 import { useState } from "react";
+import Link from "next/link"; // Import Link from next/link
 
 export default function ShopPage() {
     const [viewMode, setViewMode] = useState("list");
@@ -10,14 +11,15 @@ export default function ShopPage() {
     return (
         <div className="min-h-screen bg-[#F9FAFB]">
             {/* Header Section */}
-            <header className="bg-[#7238C2] text-white py-6 px-4">
+            <header className="bg-purple-500 text-white py-6 px-4">
                 <div className="container mx-auto flex justify-between items-center">
-                    <div className="text-3xl font-bold tracking-wide text-[#FFD700]">Hekto</div>
+                    <h1 className="text-xl font-bold text-white">Hekto</h1>
                     <nav className="space-x-6">
-                        <a href="/" className="text-lg text-white hover:text-[#FFD700] transition-colors">Home</a>
-                        <a href="/about-us" className="text-lg text-white hover:text-[#FFD700] transition-colors">About Us</a>
-                        <a href="/contact-us" className="text-lg text-white hover:text-[#FFD700] transition-colors">Contact Us</a>
-                        <a href="/login" className="text-lg text-white hover:text-[#FFD700] transition-colors">Login</a>
+                        <Link href="/" className="hover:underline text-whit">Home</Link>             
+                        <Link href="/shop" className="hover:underline text-white">Shop</Link>
+                        <Link href="/about-us" className="hover:underline text-white">About Us</Link>
+                        <Link href="/contact-us" className="hover:underline text-white">Contact Us</Link>
+                       
                     </nav>
                 </div>
             </header>

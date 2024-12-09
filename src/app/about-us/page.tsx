@@ -1,3 +1,8 @@
+"use client";
+
+import Link from "next/link";
+import Image from "next/image";
+
 export default function AboutUs() {
     return (
         <div className="about-us-page">
@@ -6,10 +11,10 @@ export default function AboutUs() {
                 <div className="container mx-auto flex justify-between items-center">
                     <h1 className="text-xl font-bold">Hekto</h1>
                     <nav className="space-x-4">
-                        <a href="/" className="hover:underline">Home</a>
-                        <a href="/blog" className="hover:underline">Blog</a>
-                        <a href="/shop" className="hover:underline">Shop</a>
-                        <a href="/contact-us" className="hover:underline">Contact Us</a>
+                        <Link href="/" className="hover:underline">Home</Link>
+                        <Link href="/shop" className="hover:underline">Shop</Link>
+                        <Link href="/about-us" className="hover:underline text-white">About Us</Link>
+                        <Link href="/contact-us" className="hover:underline">Contact Us</Link>
                     </nav>
                 </div>
             </header>
@@ -20,10 +25,12 @@ export default function AboutUs() {
 
                 <div className="flex flex-col lg:flex-row items-center lg:space-x-8">
                     <div className="lg:w-1/2">
-                        <img
-                            src="path-to-your-image.jpg"
+                        <Image
+                            src="/path-to-your-image.jpg" // Replace with the actual path to your image
                             alt="Business Meeting"
-                            className="rounded-lg shadow-lg w-full"
+                            className="rounded-lg shadow-lg"
+                            width={500}
+                            height={300}
                         />
                     </div>
                     <div className="lg:w-1/2 mt-8 lg:mt-0">
@@ -33,12 +40,12 @@ export default function AboutUs() {
                             tristique amet erat vitae eget dolor. Massa faucibus tristique vitae lobortis quis
                             bibendum quam.
                         </p>
-                        <a
+                        <Link
                             href="/contact-us"
                             className="bg-pink-500 text-white px-6 py-2 rounded inline-block"
                         >
                             Contact Us
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -46,7 +53,7 @@ export default function AboutUs() {
             {/* Features Section */}
             <div className="bg-gray-100 py-16">
                 <div className="container mx-auto text-center">
-                    <h3 className="text-2xl font-bold mb-6">Our Features</h3>
+                    <h3 className="text-2xl font-bold mb-6 text-purple-700">Our Features</h3>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                         {[
                             { icon: "🚚", title: "Free Delivery" },
@@ -56,7 +63,7 @@ export default function AboutUs() {
                         ].map((feature, index) => (
                             <div key={index} className="bg-white p-6 rounded-lg shadow">
                                 <div className="text-4xl mb-4">{feature.icon}</div>
-                                <h4 className="font-bold mb-2">{feature.title}</h4>
+                                <h4 className="font-bold mb-2 text-purple-700">{feature.title}</h4>
                                 <p className="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                             </div>
                         ))}
@@ -71,8 +78,8 @@ export default function AboutUs() {
                     <p className="font-bold mb-2">Selina Gomez</p>
                     <p className="text-gray-500 italic mb-4">CEO at WebNinja</p>
                     <p className="text-gray-700 max-w-xl mx-auto">
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non dui risus quam vel
-                        sollicitudin aliquet id arcu. Nam vitae a enim nunc, sed sapien egestas ac nam."
+                        &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non dui risus quam vel
+                        sollicitudin aliquet id arcu. Nam vitae a enim nunc, sed sapien egestas ac nam.&quot;
                     </p>
                 </div>
             </div>

@@ -37,9 +37,6 @@ export default function Header() {
           <Link href="/blog" className="hover:underline">
             Blog
           </Link>
-          <Link href="/about-us" className="hover:underline">
-            About Us
-          </Link>
           <Link href="/contact-us" className="hover:underline">
             Contact Us
           </Link>
@@ -68,17 +65,14 @@ export default function Header() {
 
         {/* User Actions */}
         <div className="flex space-x-4 items-center">
-          <Link href="/login" className="hover:underline">
-            Login
-          </Link>
           <Link href="/cart" className="hover:underline">
             <div className="relative">
               Cart
-              <span className="absolute top-0 right-0 bg-red-500 text-white rounded-full px-2 text-xs">
-                2 {/* Example item count */}
-              </span>
             </div>
           </Link>
+           <p>
+            Login
+          </p>
         </div>
       </div>
     </header>

@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function OrderCompleted() {
     return (
         <div className="p-8 text-center">
@@ -5,7 +7,9 @@ export default function OrderCompleted() {
             <p className="mt-4">Thank you for your purchase. Your order is on its way!</p>
             <p className="mt-2">Order ID: #12345</p>
             <div className="mt-8">
-                <a href="/" className="btn">Back to Home</a>
+                <Link href="/" className="btn">
+                    Back to Home
+                </Link>
             </div>
         </div>
     );

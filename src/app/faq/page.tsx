@@ -12,8 +12,10 @@ export default function FAQ() {
                     <p className="text-gray-600">We accept credit cards, PayPal, and other secure payment methods.</p>
                 </div>
                 <div className="faq-item">
-                    <h2 className="text-xl font-bold">Can I change my order after it's placed?</h2>
-                    <p className="text-gray-600">Once an order is placed, you can contact us to request changes, but we cannot guarantee modifications after processing.</p>
+                    <h2 className="text-xl font-bold">Can I change my order after it&apos;s placed?</h2>
+                    <p className="text-gray-600">
+                        Once an order is placed, you can contact us to request changes, but we cannot guarantee modifications after processing.
+                    </p>
                 </div>
             </div>
         </div>

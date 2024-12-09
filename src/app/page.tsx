@@ -30,7 +30,7 @@ export default function Home() {
 
       {/* Featured Products Section */}
       <section className="container mx-auto py-16">
-        <h2 className="text-2xl font-bold text-center">Featured Products</h2>
+        <h2 className="text-2xl font-bold text-center text-purple-700 mb-4">Featured Products</h2>
         <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Repeat Product Cards */}
           {[...Array(4)].map((_, i) => (
@@ -39,7 +39,7 @@ export default function Home() {
               className="border border-gray-200 rounded-lg p-4 text-center"
             >
               <Image src={`/path-to-product${i + 1}.jpg`} alt={`Product ${i + 1}`} width={300} height={300} />
-              <h3 className="mt-4 text-lg font-bold">Comfort Handy Craft</h3>
+              <h3 className="mt-4 text-lg font-bold text-purple-700 mb-4">Comfort Handy Craft</h3>
               <p className="mt-2 text-secondary">$60.00</p>
             </div>
           ))}
@@ -49,7 +49,7 @@ export default function Home() {
       {/* Latest Products Section */}
       <section className="bg-gray-100 py-16">
         <div className="container mx-auto">
-          <h2 className="text-2xl font-bold text-center">Latest Products</h2>
+          <h2 className="text-2xl font-bold text-center text-purple-700 mb-4">Latest Products</h2>
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {/* Repeat Product Cards */}
             {[...Array(4)].map((_, i) => (
@@ -58,7 +58,7 @@ export default function Home() {
                 className="border border-gray-200 rounded-lg p-4 text-center"
               >
                 <Image src={`/path-to-latest-product${i + 1}.jpg`} alt={`Latest Product ${i + 1}`} width={300} height={300} />
-                <h3 className="mt-4 text-lg font-bold">Modern Chair</h3>
+                <h3 className="mt-4 text-lg font-bold text-purple-700 mb-4">Modern Chair</h3>
                 <p className="mt-2 text-secondary">$70.00</p>
               </div>
             ))}
@@ -68,7 +68,7 @@ export default function Home() {
 
       {/* Trending Products Section */}
       <section className="container mx-auto py-16">
-        <h2 className="text-2xl font-bold text-center">Trending Products</h2>
+        <h2 className="text-2xl font-bold text-center text-purple-700 mb-4">Trending Products</h2>
         <div className="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {[...Array(4)].map((_, i) => (
             <div
@@ -76,7 +76,7 @@ export default function Home() {
               className="border border-gray-200 rounded-lg p-4 text-center"
             >
               <Image src={`/path-to-trending-product${i + 1}.jpg`} alt={`Trending Product ${i + 1}`} width={300} height={300} />
-              <h3 className="mt-4 text-lg font-bold">Ergonomic Chair</h3>
+              <h3 className="mt-4 text-lg font-bold text-purple-700 mb-4">Ergonomic Chair</h3>
               <p className="mt-2 text-secondary">$80.00</p>
             </div>
           ))}
@@ -86,7 +86,7 @@ export default function Home() {
       {/* Discount Section */}
       <section className="bg-purple-50 py-16">
         <div className="container mx-auto text-center">
-          <h2 className="text-2xl font-bold">20% Discount on All Products</h2>
+          <h2 className="text-2xl font-semibold text-purple-700 mb-4">20% Discount on All Products</h2>
           <p className="mt-4 text-gray-700">Grab this limited-time offer and enjoy discounts on your favorite furniture items.</p>
           <button className="mt-6 px-6 py-3 bg-primary text-white rounded-lg shadow-lg hover:bg-secondary">
             Shop Now
@@ -97,7 +97,7 @@ export default function Home() {
       {/* Newsletter Subscription */}
       <section className="bg-gray-200 py-16">
         <div className="container mx-auto text-center">
-          <h2 className="text-2xl font-bold">Get Latest Updates by Subscribing to Our Newsletter</h2>
+          <h2 className="text-2xl font-semibold text-purple-700 mb-4">Get Latest Updates by Subscribing to Our Newsletter</h2>
           <div className="mt-6 flex flex-col sm:flex-row justify-center gap-4">
             <input
               type="email"
