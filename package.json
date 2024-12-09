@@ -25,5 +25,7 @@
     "typescript": "^5",
     "webpack": "^5.97.1"
   },
-  "engines": { "node": "22.x" }
+  "engines": { 
+    "node": "22.x"
+   }
 }
